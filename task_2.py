@@ -10,7 +10,6 @@
 s = int(input("Введите количество журавликов кратное 3-м, которые сделали дети: "))
 group_man = (s // 3)
 made_man = group_man // 2                             # сделал один мальчик
-birds_k = (made_man * 2) * 2
+# birds_k = (made_man * 2) * 2
+birds_k = made_man * 4
 print(f'Катя сделала {birds_k} жураликов, а Сережа и Петя по {made_man}')
-
-

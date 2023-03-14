@@ -18,3 +18,10 @@ num2 = int(number2)
 num3 = int(number3)
 sum_num = num1 + num2 + num3
 print(f'Сумма чисел введенного числа: {sum_num}')
+
+# --------------------------------------
+user_number1 = input("Введите число: ")
+summa = sum(map(int, list(str(user_number1))))
+print(f'Сумма чисел числа {user_number1} равна {summa}', end='\n')
+
+print(*str(user_number1), sep=' + ')
