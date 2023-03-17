@@ -10,22 +10,15 @@
 
 # Для вычисления квадратного корня используйте возведение в степень 0.5 или(*) Усложнение. найдите самостоятельно в сети какая функция стандартной библиотеки вычисляет квадратный корень и как до нее добраться.
 
-from math import sqrt
+user_sum = int(input("Введите чему равна сумма двух чисел: "))
+user_multi = int(input("Ведите чему равно произведение чисел: "))
 
-# Основной вариант решения
-S = 5
-P = 6
-# Равен будет (x-y)^2 и может быть меньше нуля(комплексное)
-D = S ** 2 - 4 * P
-if D < 0:
-    print("Таких натуральных чисел не существует")
-    from cmath import sqrt
-x = (-S + sqrt(D)) / (-2)
-y = (-S - sqrt(D)) / (-2)
-print(x,y,x+y, x*y)
 
-# Или использовать вложенный цикл
-for i in range(S):
-    for j in range(P):
-        if x == i + j and y == i * j:
-            print(i, j)
+def user():
+    for x in range(user_sum):
+        for y in range(user_multi):
+            if user_sum == x + y and user_multi == x * y:
+                print(x, y, y + x, y * x)
+
+
+user()

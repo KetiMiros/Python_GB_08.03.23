@@ -6,14 +6,23 @@
 # 1 0 1 1 0
 # Кол-во монет, чтобы перевернуть: 2
 
-# Основной вариант решения
-count = int(input("Введите кол-во монет"))
-pos0 = 0
-pos1 = 0
-for i in range(count):
-    pos = int(input(f"Положение монеты {i}: 0 или 1"))
-    if pos == 0:
-        pos0 += 1
+
+coin = int(input("Введите общее кол-во монет: "))
+position0 = 0
+position1 = 0
+for i in range(coin):
+    if coin == 0 or coin == 1:
+        print("Такое количестов монет не сравнивается, попобуйте ещё раз ")
+        break
+    position = int(
+        input(f"Введите положение монеты под номером {i}: 0 или 1: "))
+    if position != 0 and position != 1:
+        print(" Зависла в воздухе, попробуйте ещё раз")
+        break
+    elif position == 0:
+        position0 += 1
     else:
-        pos1 += 1
-print(f"Кол-во монет, чтобы перевернуть: {min(pos0, pos1)} ")
+        position1 += 1
+else:
+    print(
+        f" Минимальное кол-во монет, которые нужно перевернуть: {min(position0, position1)} ")

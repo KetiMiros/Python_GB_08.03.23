@@ -17,7 +17,7 @@
 
 number = int(input("Ведите число: "))
 for i in range(number):
-    deg = 2**i
+    deg = 2 ** i
     if deg > number:
         break
     # print(deg)
