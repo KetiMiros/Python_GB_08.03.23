@@ -11,12 +11,15 @@
     Input1: 11, 92, 1, 42, 15, 12, 11, 81
     Output1: Макс. кол-во ягод 184, собрано для куста 1
 """
-lst1 = [11, 92, 1, 42, 15, 12, 11, 81]
-total_sum = 0
-for idx in range(len(lst1)):
-    idx_next = idx + 1 if idx != len(lst1) - 1 else idx - len(lst1) + 1
-    sum_current = lst1[idx - 1] + lst1[idx] + lst1[idx_next]
-    if sum_current > total_sum:
-        total_sum = sum_current
+berry_patch = [11, 92, 1, 42, 15, 12, 11,
+               81]   # ягоды на каждом кусте, каждый куст-это ind
+sum_berry = 0  # сумма собранных ягод
+for idx in range(len(berry_patch)):
+    idx_new = idx + 1 if idx != len(berry_patch) - \
+        1 else idx - len(berry_patch) + 1
+    sum_current = berry_patch[idx - 1] + \
+        berry_patch[idx] + berry_patch[idx_new]
+    if sum_current > sum_berry:
+        sum_berry = sum_current
         find_idx = idx
-print(f"Макс. кол-во ягод {total_sum}, собрано для куста {find_idx+1}")
+print(f"{sum_berry} - это максимальное количество собранных ягод, собрано для куста {find_idx+1}")
