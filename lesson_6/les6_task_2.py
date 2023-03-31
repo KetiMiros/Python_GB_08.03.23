@@ -38,7 +38,7 @@ lst_b = user_ind(lst1, 2, 9)
 lst_c = user_ind(lst1, 0, 6)
 
 # print(dict(lst_a))                          # попробовала как будетвыглядеть виде словаря
-# print((lst_a, lst_b, lst_c))                # tесли выводить все сразу, получается нечитабельно
+# print((lst_a, lst_b, lst_c))                # если выводить все сразу, получается нечитабельно
 print(user_ind(lst1, 2, 10))
 print(user_ind(lst1, 2, 9))
 print(user_ind(lst1, 0, 6))
