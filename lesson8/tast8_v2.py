@@ -1,7 +1,7 @@
 import os
 
-from model import create_record, filter_records_surname, export_in_file, read_file, change_records, delete_records
-from view import file_path, menu_buttons, view_notion, show_list_tuple_dict, show_list_dict, create_new_file, \
+from model_test import create_record, filter_records_surname, export_in_file, read_file, change_records, delete_records
+from view_test import file_path, menu_buttons, view_notion, show_list_tuple_dict, show_list_dict, create_new_file, \
     user_request
 
 
