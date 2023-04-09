@@ -1,4 +1,4 @@
-from view import get_record, user_request, view_notion, show_list_tuple_dict
+from view_test import get_record, user_request, view_notion, show_list_tuple_dict
 
 
 # Создание новой записи в справочнике
